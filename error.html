@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Error</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #e7e8ea;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* no scrollbar */
+}
+
+/* Full screen center */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image container */
+.image-box {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 95vh; /* 👈 IMPORTANT FIX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image */
+.image-box img {
+  width: auto;
+  height: 100%;
+  max-height: 95vh;
+  object-fit: contain; /* 👈 NO CUT */
+}
+
+/* Toll free number */
+.tollfree {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(16px, 2.2vw, 26px);
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tollfree a {
+  color: #000;
+  text-decoration: none;
+}
+
+.tollfree a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile fine tuning */
+@media (max-width: 600px) {
+  .tollfree {
+    top: 68%;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="image-box">
+
+    <img src="images/error.png" alt="Error">
+
+    <div class="tollfree">
+      Toll Free (USA/CA):
+      <a href="tel:+18774967174">+1 (877) 496-7174</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

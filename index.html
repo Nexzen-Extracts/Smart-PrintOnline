@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Printer Setup </title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body style="margin:0; padding:0; background; font-family:Arial, Helvetica, sans-serif;">
+
+
+<div style="padding:70px 10px; box-sizing:border-box;">
+
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:15px;">
+
+
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px; font-weight: 600; color:black;">
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:50%; color:white;background-color:#024ad8; font-weight:bold; margin-right:4px;">1</span>
+      <span>Identify</span>
+      <span style="margin:0 6px; color:black;">&gt;</span>
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:50%; color:white;background-color:#024ad8; font-weight:bold; margin-right:4px;">2</span>
+      <span>Download</span>
+      <span style="margin:0 6px; color:black;">&gt;</span>
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:50%; color:white;background-color:#024ad8; font-weight:bold; margin-right:4px;">3</span>
+      <span>Install</span>
+    </div>
+
+
+ <div style="display:flex; align-items:center; gap:10px; font-size:13px; color:black;">
+  <span>Select a different product type:</span>
+
+  <div style="display:flex; gap:8px;">
+    <button type="button" style="border:none; outline:none; width:32px; height:32px; border-radius:50%; background:#2764ff; color:#fff; cursor:pointer;">
+      <i class="fa fa-print"></i>
+    </button>
+
+    <button type="button" style="border:1px solid #ddd; width:32px; height:32px; border-radius:50%; background:#fff; cursor:pointer;">
+      <i class="fa fa-copy"></i>
+    </button>
+
+    <button type="button" style="border:1px solid #ddd; width:32px; height:32px; border-radius:50%; background:#fff; cursor:pointer;">
+      <i class="fa fa-file"></i>
+    </button>
+
+    <button type="button" style="border:1px solid #ddd; width:32px; height:32px; border-radius:50%; background:#fff; cursor:pointer;">
+      <i class="fa fa-ellipsis-h"></i>
+    </button>
+  </div>
+</div>
+
+<div style="width:100%; height:1px; background:#000; margin:0;"></div>
+
+ <!-- HERO SECTION START -->
+<section style="
+  width:100%;
+  background:#ffffff;
+  padding:70px 20px 80px;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top:20px;
+">
+
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+  ">
+
+    <!-- LEFT CONTENT -->
+    <div style="
+      flex:1 1 420px;
+      min-width:280px;
+    ">
+      <h1 style="
+        
+        line-height:1.15;
+        margin:0 0 20px 0;
+            font-size: 32px;
+    color: #024AD8;
+        font-weight:800;
+      ">
+        Easy Printer Setup
+      </h1>
+
+      <p style="
+        font-size:16px;
+        color:#333;
+        margin:0 0 14px 0;
+        line-height:1.6;
+      ">
+       Power on your printer to get started.
+      </p>
+
+      <p style="
+        font-size:16px;
+        color:#333;
+        margin:0 0 30px 0;
+        line-height:1.6;
+        max-width:520px;
+      ">
+        Next,select <strong>Printer Setup</strong>  to follow an easy, step-by-step guide for setting up, customising, and registering your device.
+      </p>
+
+      <a href="next.html" style="
+        display:inline-block;
+        padding:16px 36px;
+        background:#0b4ddb;
+        color:#ffffff;
+        font-size:16px;
+        font-weight:700;
+        text-decoration:none;
+        border-radius:14px;
+        box-shadow:0 10px 25px rgba(11,77,219,0.35);
+        transition:all .25s ease;
+      "
+      onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 16px 35px rgba(11,77,219,0.45)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(11,77,219,0.35)'"
+      >
+        Click Here for Printer Setup
+      </a>
+    </div>
+
+    <!-- RIGHT SLIDER -->
+    <div style="
+      flex:1 1 420px;
+      min-width:280px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    ">
+
+      <!-- LEFT ARROW -->
+      <button onclick="prevSlide()" style="
+        position:absolute;
+        left:-18px;
+        width:44px;
+        height:44px;
+        border-radius:50%;
+        border:none;
+        background:#ffffff;
+        box-shadow:0 6px 20px rgba(0,0,0,0.15);
+        font-size:26px;
+        cursor:pointer;
+        z-index:2;
+      ">‹</button>
+
+      <!-- IMAGE CONTAINER -->
+      <div style="
+        width:100%;
+        max-width:520px;
+        overflow:hidden;
+        border-radius:18px;
+        box-shadow:0 20px 50px rgba(0,0,0,0.18);
+      ">
+        <img id="printerSlider" src="images/slide-1.png" style="
+          width:100%;
+          display:block;
+          transition:opacity .4s ease;
+        ">
+      </div>
+
+      <!-- RIGHT ARROW -->
+      <button onclick="nextSlide()" style="
+        position:absolute;
+        right:-18px;
+        width:44px;
+        height:44px;
+        border-radius:50%;
+        border:none;
+        background:#ffffff;
+        box-shadow:0 6px 20px rgba(0,0,0,0.15);
+        font-size:26px;
+        cursor:pointer;
+        z-index:2;
+      ">›</button>
+    </div>
+
+  </div>
+</section>
+<!-- HERO SECTION END -->
+
+
+<!-- SLIDER SCRIPT -->
+<script>
+  const images = [
+    "images/slide-1.png",
+    "images/slider-2.webp"
+  ];
+  let index = 0;
+  const slider = document.getElementById("printerSlider");
+
+  function nextSlide() {
+    index = (index + 1) % images.length;
+    slider.style.opacity = "0";
+    setTimeout(() => {
+      slider.src = images[index];
+      slider.style.opacity = "1";
+    }, 200);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + images.length) % images.length;
+    slider.style.opacity = "0";
+    setTimeout(() => {
+      slider.src = images[index];
+      slider.style.opacity = "1";
+    }, 200);
+  }
+</script>
+
+<!-- RESPONSIVE FIX -->
+<style>
+@media (max-width:768px){
+  section{
+    padding:40px 16px !important;
+  }
+  h1{
+    font-size:32px !important;
+  }
+}
+</style>
+<!-- HERO SECTION END -->
+
+
+
+
+<!-- ISSUE CARDS (ONE LINE FIXED) -->
+<!-- ISSUE CARDS (ONE LINE FIXED) -->
+<section style="
+  width:100%;
+  padding:40px 20px;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+">
+
+  <div class="issue-grid">
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <rect x="12" y="18" width="40" height="28" rx="4"></rect>
+        <circle cx="44" cy="40" r="5"></circle>
+        <polyline points="42,40 44,42 48,36"></polyline>
+      </svg>
+      <p>Printer Setup<br>Issues</p>
+    </div>
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <rect x="12" y="18" width="40" height="28" rx="4"></rect>
+        <circle cx="44" cy="40" r="5"></circle>
+        <line x1="44" y1="36" x2="44" y2="44"></line>
+      </svg>
+      <p>Printer Offline<br>Issues</p>
+    </div>
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <circle cx="32" cy="34" r="3"></circle>
+        <path d="M22 28a14 14 0 0 1 20 0"></path>
+        <path d="M16 22a22 22 0 0 1 32 0"></path>
+      </svg>
+      <p>WiFi Connection<br>Errors</p>
+    </div>
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <rect x="18" y="12" width="28" height="40" rx="4"></rect>
+        <line x1="24" y1="24" x2="40" y2="24"></line>
+        <circle cx="40" cy="42" r="5"></circle>
+        <line x1="36" y1="38" x2="44" y2="46"></line>
+      </svg>
+      <p>Paper Jam<br>Errors</p>
+    </div>
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <rect x="14" y="20" width="36" height="24" rx="4"></rect>
+        <line x1="20" y1="28" x2="44" y2="28"></line>
+        <line x1="20" y1="34" x2="44" y2="34"></line>
+        <circle cx="44" cy="42" r="5"></circle>
+      </svg>
+      <p>Print Jobs Stuck<br>in Queue</p>
+    </div>
+
+    <div class="issue-card" onclick="if(window.jivo_api){jivo_api.open();}">
+      <svg viewBox="0 0 64 64">
+        <rect x="18" y="12" width="28" height="40" rx="4"></rect>
+        <rect x="22" y="18" width="20" height="14"></rect>
+        <line x1="22" y1="42" x2="42" y2="42"></line>
+      </svg>
+      <p>Scanner<br>Malfunctions</p>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+.issue-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(6, 1fr);
+  gap:26px;
+}
+
+.issue-card{
+  background:#ffffff;
+  border-radius:22px;
+  padding:30px 18px;
+  text-align:center;
+  box-shadow:0 18px 45px rgba(0,0,0,0.18);
+  transition:.25s ease;
+}
+
+.issue-card:hover{
+  transform:translateY(-6px);
+}
+
+.issue-card svg{
+  width:46px;
+  height:46px;
+  margin-bottom:16px;
+  stroke:#0b4ddb;
+  stroke-width:2.2;
+  fill:none;
+}
+
+.issue-card p{
+  margin:0;
+  font-size:16px;
+  font-weight:700;
+  color:#0b4ddb;
+  line-height:1.35;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .issue-grid{ grid-template-columns:repeat(3,1fr); }
+}
+
+@media(max-width:640px){
+  .issue-grid{ grid-template-columns:repeat(2,1fr); }
+}
+
+@media(max-width:420px){
+  .issue-grid{ grid-template-columns:1fr; }
+}
+</style>
+
+
+    
+
+
+  
+
+
+
+
+  <!-- FONT (ADD ONCE IN PAGE) -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.font-same{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
+<!-- FONT (ADD ONCE IN PAGE IF NOT ADDED) -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.font-same{
+  font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+</style>
+
+<div class="font-same" style="max-width:1200px; margin:20px auto; padding:0 16px;">
+
+  <!-- INTRO -->
+ <p style="font-size:16.5px; color:#e11d2e; line-height:1.75; margin-bottom:30px; font-weight:600;">
+  <span style="font-size:22px; margin-right:6px;">•</span>
+Setting up your printer doesn’t have to be complicated. Follow this detailed guide to install, connect, and configure your printer successfully. Each step is accompanied by visual guidance and troubleshooting tips to help you get your printer running smoothly.
+</p>
+
+
+<!-- STEP 1 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0;  font-size: 18px;
+    color: #024AD8;font-weight:600;">
+    Step 1: Unbox and Prepare Your Printer
+  </h3>
+  <ul style="margin:0 0 18px 0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>Carefully remove the printer and all accessories from the box.</li>
+    <li>Remove all protective materials and tapes.</li>
+    <li>Place the printer on a flat, stable surface near your computer or Wi-Fi router.</li>
+    <li>Plug in the printer and power it on.</li>
+    <li>Wait until the printer completes its initial startup and alignment.</li>
+
+  </ul>
+  <div style="font-size:15.5px; color:#222; line-height:1.75;">
+    <strong style="color:black;">Troubleshooting Tip:</strong><br>
+    If the printer doesn’t turn on, double-check the power cable and wall outlet connection. Avoid using surge protectors or extension cords for the first setup.
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0; font-size: 18px;
+    color: #024AD8;font-weight:600;">
+    Step 2: Download the Latest Software
+  </h3>
+  <ul style="margin:0 0 18px 0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>Visit the official support page or use the <strong>installation CD </strong>(if provided).</li>
+    <li>Download the latest printer driver and setup utility compatible with your operating system (Windows, macOS, etc.).</li>
+    <li>Save the file to your desktop or downloads folder for easy access.</li>
+   
+  </ul>
+  <div style="font-size:15.5px; color:#222; line-height:1.75;">
+    <strong style="color:black;">Troubleshooting Tip:</strong><br>
+   If the download fails, check your internet connection or temporarily disable antivirus software that might block downloads.</div>
+</div>
+
+<!-- STEP 3 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0; font-size: 18px;
+    color: #024AD8; font-weight:600;">
+    Step 3: Connect Your Printer to the Device
+  </h3>
+
+  <p style="font-size:15.5px; font-weight:600; margin:0 0 10px 0; color:#222;">
+    Option A – USB Connection
+  </p>
+  <ul style="margin:0 0 18px 0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>Plug the printer directly into your computer using a <strong>USB cable.</strong></li>
+    <li>Wait for the system to detect the printer automatically.</li>
+   
+  </ul>
+
+  <p style="font-size:15.5px; font-weight:600; margin:0 0 10px 0; color:#222;">
+    Option B – Wireless Connection
+  </p>
+  <ul style="margin:0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>On the printer’s control panel, open <strong>Wi-Fi Setup or Network Settings.</strong></li>
+    <li>Choose your Wi-Fi network and enter the password.</li>
+    <li>Confirm the connection on-screen or via printer light indicators.</li>
+    
+  </ul>
+</div>
+
+<!-- STEP 4 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0; font-size: 18px;
+    color: #024AD8; font-weight:600;">
+    Step 4: Install and Configure Printer Drivers
+  </h3>
+  <ul style="margin:0 0 18px 0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>Run the downloaded setup file and follow on-screen instructions.</li>
+    <li>Choose your preferred connection type (USB or Wireless)</li>
+    <li>Wait for the software to detect and configure your printer.</li>
+    <li>Complete the setup and restart your computer if prompted.</li>
+    
+  </ul>
+  <div style="font-size:15.5px; color:#222; line-height:1.75;">
+    <strong style="color:black">Troubleshooting Tip:</strong><br>
+   If the printer isn’t detected, switch USB ports, try a different cable, or disable background antivirus temporarily during installation.
+  </div>
+</div>
+
+<!-- STEP 5 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0; font-size: 18px;
+    color: #024AD8;font-weight:600;">
+    Step 5: Print a Test Page
+  </h3>
+  <ul style="margin:0 0 18px 0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>After setup, open your printer settings and select Print Test Page.</li>
+    <li>Confirm that the printer produces a clean, aligned page without errors</li>
+  
+  </ul>
+  <div style="font-size:15.5px; color:#222; line-height:1.75;">
+    <strong style="color:black;">Troubleshooting Tip:</strong><br>
+    If the test page doesn’t print, ensure the correct printer is selected and that ink or toner cartridges are properly installed.
+  </div>
+</div>
+
+<!-- STEP 6 -->
+<div style="background:#f7eced; border-radius:16px; padding:30px 34px; margin-bottom:30px; box-shadow:0 10px 26px rgba(0,0,0,0.12); border-left:6px solid #2563eb;">
+  <h3 style="margin:0 0 18px 0; font-size: 18px;
+    color: #024AD8; font-weight:600;">
+    Step 6: Set Default Printer Preferences
+  </h3>
+  <ul style="margin:0; padding-left:22px; line-height:1.85; font-size:15.5px; color:#222;">
+    <li>Open <strong>Printers & Scanners</strong> from your computer settings.</li>
+    <li>Set your new printer as the <strong>default.</strong></li>
+    <li>Adjust preferences like paper size, print quality, and orientation.</li>
+   
+  </ul>
+</div>
+
+</div>
+
+
+
+   <!-- FONT (ADD ONCE IF NOT ADDED ALREADY) -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.trouble-font{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+</style>
+
+
+
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+  ">
+
+    <!-- LEFT CONTENT -->
+    <div style="flex:1 1 420px;">
+
+      <h3 style="
+        margin:0 0 14px 0;
+          font-size: 18px;
+    color: #024AD8;
+        font-weight:600;
+      ">
+        Still Need Help? Connect with Our Online Experts
+      </h3>
+
+      <p style="
+        font-size:15px;
+        color:#555;
+        line-height:1.75;
+        margin:0 0 22px 0;
+        max-width:520px;
+      ">
+        If you’re still facing issues after completing these steps, our certified support team is ready to help. Connect with our online experts for real-time troubleshooting, personalized guidance, and fast solutions to get your printer running perfectly again.
+      </p>
+
+      <a href="javascript:void(0)"
+         onclick="if(window.jivo_api){jivo_api.open();}"
+         style="
+           display:inline-block;
+          
+           font-size:14px;
+           font-weight:600;
+           box-shadow:0 6px 18px rgba(39,100,255,0.35);
+           text-decoration: none;
+    color: #ffffff;
+    background-color: #024AD8;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px 10px 10px 10px;
+         ">
+        Click for Chat Assistance
+      </a>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div style="
+      flex:1 1 420px;
+      display:flex;
+      justify-content:center;
+    ">
+      <img src="images/banner23457-1536x1058.jpg"
+           alt="Customer Support Representative"
+           style="
+             width:100%;
+             max-width:440px;
+             border-radius:14px;
+             box-shadow:0 10px 30px rgba(0,0,0,0.18);
+           ">
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer style="
+  background:#000000;
+  color:#ffffff;
+  padding:45px 0 25px 0;
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+">
+
+  <!-- TOP FOOTER -->
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    align-items:flex-start;
+  ">
+
+    <!-- BRAND -->
+    <div style="flex:1 1 0; min-width:240px;">
+      <img src="images/logo (2).png " alt="#" style="
+        max-width:180px;
+        height:60px;
+        margin:0 0 14px 0;
+        display:block;
+      ">
+
+      <p style="font-size:16px; line-height:1.7; margin:0; color:#ffffff;">
+        Smarter printing starts here. Discover top-rated printers, exceptional value, and
+        dedicated support — only at MicroTech Solutions.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div style="flex:1 1 0; min-width:240px;">
+      <h2 style="color:#ffffff; font-size:20px; margin:0 0 12px 0;">Quick Links</h2>
+      <ul style="list-style:none; margin:0; padding:0; font-size:16px; line-height:1.9;">
+        <li><a href="/index.html" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Home</a></li>
+        <li><a href="#" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">About Us</a></li>
+        <li><a href="#" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Blog</a></li>
+        <li><a href="#" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">FAQ's</a></li>
+        <li><a href="#" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- USEFUL LINKS -->
+    <div style="flex:1 1 0; min-width:240px;">
+      <h2 style="color:#ffffff; font-size:20px; margin:0 0 12px 0;">Useful Links</h2>
+      <ul style="list-style:none; margin:0; padding:0; font-size:16px; line-height:1.9;">
+        <li><a href="privacy-policy.html" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Privacy Policy</a></li>
+        <li><a href="term&condition.html" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Terms and Conditions</a></li>
+        <li><a href="refund-policy.html" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Refund Policy</a></li>
+        <li><a href="disclaimer.html" style="color:#ffffff; text-decoration:none; transition:color .2s;"
+          onmouseover="this.style.color='#ff2b2b'" onmouseout="this.style.color='#ffffff'">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div style="flex:1 1 0; min-width:240px;">
+      <h2 style="margin:0 0 12px 0; font-size:20px;">Quick Contact</h2>
+
+      <p style="margin:0 0 8px 0; font-size:16px; line-height:1.7; color:#ffffff;">
+        20503 Khole Springs Lane, Cypress, TX, 77433
+      </p>
+
+      <p style="margin:0 0 6px 0; font-size:16px;">
+        Email :
+        <a href="mailto:info@smartprintonline.com"
+           style="color:#ffffff; text-decoration:none; transition:color .2s;"
+           onmouseover="this.style.color='#ff2b2b'"
+           onmouseout="this.style.color='#ffffff'">
+         info@smartprintonline.com
+        </a>
+      </p>
+
+      <p style="margin:0 0 6px 0; font-size:16px;">
+        Phone :
+        <a href="tel:+18774967174"
+           style="color:#ffffff; text-decoration:none; transition:color .2s;"
+           onmouseover="this.style.color='#ff2b2b'"
+           onmouseout="this.style.color='#ffffff'">
+          +1 (877) 496-7174
+        </a>
+      </p>
+
+      <p style="margin:0; font-size:16px;">
+        Website :<a href="https:// info@smartprintonline.com"
+           style="color:#ffffff; text-decoration:none; transition:color .2s;"
+           onmouseover="this.style.color='#ff2b2b'"
+           onmouseout="this.style.color='#ffffff'">www.smartprintonline.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="
+    max-width:1200px;
+    margin:30px auto 18px auto;
+    padding:0 20px;
+    border-bottom:1px solid #333333;
+  "></div>
+
+  <!-- BOTTOM FOOTER -->
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+  ">
+    <div style="font-size:16px; color:#cfcfcf;">
+      Copyright © 2026 Smart PrintOnline. All rights reserved.
+    </div>
+
+    <div>
+      <img src="images/payments.svg" alt="Payment Methods" style="height:64px; width:250px;">
+    </div>
+  </div>
+
+</footer>
+
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl508789'},{'dcenter':'p3'},{'cp_id':'10221600'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+</html>

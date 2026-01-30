@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>123.hp.com - OTHER PRINTERS HP Smart</title>
+<link rel="icon" href="images/fav.png" type="image/x-icon">
+
+<style>
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.hp-header{
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+.hp-container{
+  max-width:1200px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo */
+.hp-logo img{
+  height:40px;
+}
+
+/* Navigation */
+.hp-nav{
+  display:flex;
+  gap:40px;
+}
+
+.hp-nav a{
+  text-decoration:none;
+  color:#000;
+  font-size:16px;
+  font-weight:500;
+  transition:color .2s ease;
+}
+
+.hp-nav a:hover{
+  color:#0096d6;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .hp-container{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .hp-nav{
+    gap:24px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hp-header">
+  <div class="hp-container">
+    
+    <!-- Logo -->
+    <div class="hp-logo">
+  <a href="next.html">
+    <img src="/images/hp logo.png" alt="HP Logo">
+  </a>
+</div>
+
+
+    <!-- Navigation -->
+    <nav class="hp-nav">
+      <a href="./officejet.html">OfficeJet</a>
+      <a href="./deskjet.html">DeskJet</a>
+      <a href="./envy.html">ENVY</a>
+      <a href="./laserjet.html">LaserJet</a>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<section style="
+width:100%;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#ffffff;
+font-family:Roboto, Arial, sans-serif;
+">
+
+  <div style="
+  text-align:center;
+  padding:20px;
+  max-width:420px;
+  ">
+
+    <!-- LOADER GIF -->
+    <img src="images/loader.gif" alt="Loading"
+         style="
+         width:160px;
+         max-width:100%;
+         height:auto;
+         margin-bottom:24px;
+         ">
+
+    <div style="
+    font-size:18px;
+    color:#000;
+    margin-bottom:10px;
+    ">
+      Please wait, installation in progress!
+    </div>
+
+    <div style="
+    font-size:26px;
+    font-weight:400;
+    color:#000;
+    margin-bottom:14px;
+    ">
+      Download Printer Setup / Drivers
+    </div>
+
+    <div style="
+    font-size:16px;
+    font-weight:500;
+    color:#1a9b00;
+    letter-spacing:.5px;
+    ">
+      SERVER CONNECTED
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+/* AUTO REDIRECT AFTER 60 SECONDS */
+setTimeout(function(){
+  window.location.href = "error.html";
+}, 60000);
+</script>
+
+
+
+</body>
+</html>
